@@ -683,7 +683,7 @@ class Main {
 			LinkedList<Partido> partidoSemis, LinkedList<Pais> finaal, LinkedList<Partido> partidoFinal, LinkedList<Pais> tercerycuarto, LinkedList<Partido> partidoTercer,
 			LinkedList<Pais> top4, Encargado encargado) {
 		Scanner entrada = new Scanner (System.in);
-		System.out.println("\t Bienvenido al Mundial de Qatar 2022 \t\n ¿Que desea realizar? \n1- Quiero simular el mundial completo \n 2 - Quiero decidir los datos de los partidos por mi cuenta");
+		System.out.println("\t Bienvenido al Mundial de Qatar 2022 \t\n ¿Que desea realizar? \n1- Quiero simular el mundial completo \n 2 - Quiero decidir los datos de los partidos por mi cuenta y realizar apuestas");
 		int op= entrada.nextInt();
 		String seguir;
 		switch(op) {
