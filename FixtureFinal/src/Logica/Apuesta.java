@@ -3,6 +3,8 @@ package Logica;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Apuesta {
 	private double pozo_local;
 	private double pozo_visitante;
@@ -95,7 +97,6 @@ public class Apuesta {
 	}
 
 	public static void betApuesta(Partido partido) {
-		Scanner entrada = new Scanner(System.in);
 		String op;
 		double apuesta = 0;
 		double bet_local;
@@ -105,26 +106,24 @@ public class Apuesta {
 		partido.getApuesta().setBet_visitante(Math.round(((partido.getApuesta().pozo_local + partido.getApuesta().pozo_empate) / partido.getApuesta().pozo_visitante) * 100d) / 100d);
 		partido.getApuesta().setBet_empate(Math.round(((partido.getApuesta().pozo_visitante + partido.getApuesta().pozo_local) / partido.getApuesta().pozo_empate) * 100d) / 100d);
 		
-		System.out.println("Las apuestas son las siguientes. \n " + partido.getPais().getNombre() + " Paga x" + partido.getApuesta().getBet_local() + " de lo apostado" + "\n " + partido.getPais2().getNombre() + " Paga x" + partido.getApuesta().getBet_visitante() + " de lo apostado" + "\n El empate del partido Paga x" + partido.getApuesta().getBet_empate() + " de lo apostado");
-		System.out.println("Elija el nombre del equipo al que desea apostar o empate en caso de no querer apostar por ningun equipo.");
-		op = entrada.nextLine();
+		JOptionPane.showMessageDialog(null, "Las apuestas son las siguientes. \n " + partido.getPais().getNombre() + " Paga x" + partido.getApuesta().getBet_local() + " de lo apostado" + "\n " + partido.getPais2().getNombre() + " Paga x" + partido.getApuesta().getBet_visitante() + " de lo apostado" + "\n El empate del partido Paga x" + partido.getApuesta().getBet_empate() + " de lo apostado");
+		op = JOptionPane.showInputDialog("Elija el nombre del equipo al que desea apostar o empate en caso de no querer apostar por ningun equipo.");
 		partido.getApuesta().setEleccion(op);
 		
 		if (partido.getApuesta().getEleccion().equalsIgnoreCase(partido.getPais().getNombre()) || partido.getApuesta().getEleccion().equalsIgnoreCase(partido.getPais2().getNombre()) || partido.getApuesta().getEleccion().equalsIgnoreCase("empate")){
-			System.out.println("Usted eligio " + partido.getApuesta().getEleccion());
-			System.out.println("Ingrese el monto que desea apostar");
-			apuesta = entrada.nextDouble();
+			JOptionPane.showMessageDialog(null, "Usted eligio " + partido.getApuesta().getEleccion());
+			apuesta = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el monto que desea apostar"));
 			partido.getApuesta().setApuesta_ingresada(apuesta);
 			if (partido.getApuesta().getEleccion().equalsIgnoreCase(partido.getPais().getNombre())) {
-				System.out.println("Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_local()));	
+				JOptionPane.showMessageDialog(null, "Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_local()));	
 			} else if (partido.getApuesta().getEleccion().equalsIgnoreCase(partido.getPais2().getNombre())) {
-				System.out.println("Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_visitante()));
+				JOptionPane.showMessageDialog(null, "Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_visitante()));
 			} else {
-				System.out.println("Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_visitante()));
+				JOptionPane.showMessageDialog(null, "Apuesta cargada correctamente, en caso de ganar, el monto que se llevara es: " + (partido.getApuesta().getApuesta_ingresada() * partido.getApuesta().getBet_visitante()));
 			}
 			partido.getApuesta().setEstado(true);
 		} else {
-			System.out.println("Por favor elija un pais o la opcion de empate.");
+			JOptionPane.showMessageDialog(null, "Por favor elija un pais o la opcion de empate.");
 			partido.getApuesta().setEstado(false);
 		}
 		
@@ -137,21 +136,21 @@ public class Apuesta {
 				if (partido.get(i).getApuesta().getEleccion().equalsIgnoreCase(partido.get(i).getPais().getNombre()) || partido.get(i).getApuesta().getEleccion().equalsIgnoreCase(partido.get(i).getPais2().getNombre()) || partido.get(i).getApuesta().getEleccion().equalsIgnoreCase("empate")) {
 					if (partido.get(i).getGol_local() > partido.get(i).getGol_visitante()) {
 						if (partido.get(i).getPais().getNombre().equalsIgnoreCase(partido.get(i).getApuesta().getEleccion())){
-							System.out.println("El ganador fue " + partido.get(i).getPais().getNombre() + " \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_local()));
+							JOptionPane.showMessageDialog(null, "El ganador fue " + partido.get(i).getPais().getNombre() + " \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_local()));
 						} else {
-							System.out.println("Usted perdió la apuesta, se lleva $0");
+							JOptionPane.showMessageDialog(null, "Usted perdió la apuesta, se lleva $0");
 						}
 					} else if (partido.get(i).getGol_visitante() > partido.get(i).getGol_local()) {
 						if (partido.get(i).getPais2().getNombre().equalsIgnoreCase(partido.get(i).getApuesta().getEleccion())){
-							System.out.println("El ganador fue " + partido.get(i).getPais2().getNombre() + " \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_visitante()));
+							JOptionPane.showMessageDialog(null, "El ganador fue " + partido.get(i).getPais2().getNombre() + " \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_visitante()));
 						} else {
-							System.out.println("Usted perdió la apuesta, se lleva $0");
+							JOptionPane.showMessageDialog(null, "Usted perdió la apuesta, se lleva $0");
 						}
 					} else{
 						if (partido.get(i).getApuesta().getEleccion().equalsIgnoreCase("empate")) {
-							System.out.println("El resultado fue empate. \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_empate()));		
+							JOptionPane.showMessageDialog(null, "El resultado fue empate. \nUsted ganó la apuesta y se lleva $" + (partido.get(i).getApuesta().getApuesta_ingresada() * partido.get(i).getApuesta().getBet_empate()));	
 						} else {
-							System.out.println("Usted perdió la apuesta, se lleva $0");
+							JOptionPane.showMessageDialog(null, "Usted perdió la apuesta, se lleva $0");
 						}
 					}		
 				}

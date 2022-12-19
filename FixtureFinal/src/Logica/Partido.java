@@ -3,6 +3,8 @@ package Logica;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Partido {
 	private Pais pais;
 	private Pais pais2;
@@ -70,21 +72,17 @@ public class Partido {
 	}
 	
 	public static void realizarApuesta(LinkedList<Partido> partidos) {
-		Scanner entrada = new Scanner(System.in);
 		int part;
 		String preg;
 		do {
-			System.out.println("\t Bienvenido al sistema de apuestas. \n A continuacion tendra el listado de los partidos de esta jornada para realizar su apuesta. \n " + partidos);
-			System.out.println("Seleccione el numero de partido en el que desee realizar una apuesta");
-			part = entrada.nextInt() - 1;
+			part = Integer.parseInt(JOptionPane.showInputDialog("\t Bienvenido al sistema de apuestas. \n A continuacion tendra el listado de los partidos de esta jornada para realizar su apuesta. \n " + partidos + "\nSeleccione el numero de partido en el que desee realizar una apuesta"));
+			part = part - 1;
 			if (partidos.size() > part) {
 				partidos.get(part).apuesta.betApuesta(partidos.get(part));
 			} else {
-				System.out.println("No existe el numero de partido que indico.");
+				JOptionPane.showMessageDialog(null, "No existe el numero de partido que indico.");
 			}
-			System.out.println("Desea realizar otra apuesta en otro partido? Responder SI o NO");
-			entrada.nextLine();
-			preg= entrada.nextLine();
+			preg = JOptionPane.showInputDialog("Desea realizar otra apuesta en otro partido? Responder SI o NO");
 		} while(preg.equalsIgnoreCase("si"));
 		
 		

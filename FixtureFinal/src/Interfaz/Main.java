@@ -198,76 +198,62 @@ class Main {
 
 	public static void verRankingGrupo(LinkedList<Pais> grupos, int op) {
 		String grupo;
-		Scanner entrada = new Scanner(System.in);
 		if (op == 1) {
-			System.out.println("Grupo A: ");
+			JOptionPane.showMessageDialog(null, "Grupo A: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("a")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
-				}
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo B: ");
+			JOptionPane.showMessageDialog(null, "Grupo B: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("b")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
-				}
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo C: ");
+			JOptionPane.showMessageDialog(null, "Grupo C: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("c")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
-				}
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());				}
 			}
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo D: ");
+			JOptionPane.showMessageDialog(null, "Grupo D: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("d")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());
 				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo E: ");
+			JOptionPane.showMessageDialog(null, "Grupo E: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("e")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
-				}
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo F: ");
+			JOptionPane.showMessageDialog(null, "Grupo F: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("f")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());
 				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo G: ");
+			JOptionPane.showMessageDialog(null, "Grupo G: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("g")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());
 				}
 			}	
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Grupo H: ");
+			JOptionPane.showMessageDialog(null, "Grupo H: ");
 			for (Pais pais : grupos) {
 				if (pais.getGrupo().equalsIgnoreCase("h")) {
-					System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
+					JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());
 				}
 			}	
 		} else if (op == 2) {
 			String repetir;
 			do {
-				System.out.println("Por favor ingrese el grupo del que desea saber el ranking");
-				grupo = entrada.nextLine(); 
+				grupo = JOptionPane.showInputDialog("Por favor ingrese el grupo del que desea saber el ranking"); 
 				for (Pais pais : grupos) {
 					if (pais.getGrupo().equalsIgnoreCase(grupo)) {
-						System.out.println("Nombre\tPuntos\tPG\tPP\tPE\tGF\tGC\tDG\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles());
+						JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles());
 					}
 				}			
 				
-			System.out.println("Desea consultar por otro grupos? Responder SI o NO.");
-			repetir = entrada.nextLine();	
+			repetir = JOptionPane.showInputDialog("Desea consultar por otro grupos? Responder SI o NO.");	
 			} while (repetir.equalsIgnoreCase("si"));
 		}
 		
@@ -277,31 +263,27 @@ class Main {
 		int p=0;
 		String elec;
 		int gol_local, gol_visitante;
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Partidos grupo " + grupos.get(0).getGrupo());
+		JOptionPane.showMessageDialog(null, "Partidos grupo " + grupos.get(0).getGrupo());
 			if (op == 1) {
 				for (int i = 0; i<6; i++) {
 				partidos.get(i).setGol_local((int)(Math.random()*6));
 				partidos.get(i).setGol_visitante((int)(Math.random()*6));
 				}
 			} else if (op == 2) {
-				System.out.println("Desea realizar una apuesta en el grupo " + grupos.get(0).getGrupo() + "? Responder SI o NO, si escribe cualquier otra cosa debera esperar al siguiente grupo para apostar.");
-				elec = entrada.nextLine();
+				elec = JOptionPane.showInputDialog("Desea realizar una apuesta en el grupo " + grupos.get(0).getGrupo() + "? Responder SI o NO, si escribe cualquier otra cosa debera esperar al siguiente grupo para apostar.");
 				if (elec.equalsIgnoreCase("si")) {
 					Partido.realizarApuesta(partidos);
 				} 
 				for (int i = 0; i<6; i++) {
-				System.out.println("El partido es el siguiente: " + partidos.get(i)); 
-				System.out.println("Ingrese los goles de " + partidos.get(i).getPais().getNombre() + ":");
-				partidos.get(i).setGol_local(entrada.nextInt());
-				System.out.println("Ingrese los goles de " + partidos.get(i).getPais2().getNombre() + ":");
-				partidos.get(i).setGol_visitante(entrada.nextInt());	
+				JOptionPane.showMessageDialog(null, "El partido es el siguiente: " + partidos.get(i));
+				partidos.get(i).setGol_local(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partidos.get(i).getPais().getNombre() + ":")));
+				partidos.get(i).setGol_visitante(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partidos.get(i).getPais2().getNombre() + ":")));
 				}
 			}
 			for (int i = 0; i<6; i++) {
 			partidos.get(i).setDuracion(Math.round(((Math.random()*10) + 90) * 100d) / 100d);
 			p++;
-			System.out.println("Resultado partido " + p + "\n" + partidos.get(i).getGol_local() + " " + partidos.get(i).getPais() + " - " + partidos.get(i).getPais2() + " " + partidos.get(i).getGol_visitante() + "  // Duracion del partido: " + partidos.get(i).getDuracion() + " min. \n");
+			JOptionPane.showMessageDialog(null, "Resultado partido " + p + "\n" + partidos.get(i).getGol_local() + " " + partidos.get(i).getPais() + " - " + partidos.get(i).getPais2() + " " + partidos.get(i).getGol_visitante() + "  // Duracion del partido: " + partidos.get(i).getDuracion() + " min. \n");
 			gol_local = partidos.get(i).getGol_local();
 			gol_visitante = partidos.get(i).getGol_visitante();
 			partidos.get(i).getPais().setGoles_favor(partidos.get(i).getPais().getGoles_favor() + gol_local);
@@ -368,8 +350,6 @@ class Main {
 	}
 	
 	public static void partidosEliminatorias(LinkedList<Partido> partido, LinkedList<Pais> clasificado, LinkedList<Pais> tercer, int op) {
-		Partido partidocl;
-		Scanner entrada = new Scanner(System.in);
 		String elec;
 		int penal_local=0, penal_vis=0;
 		if (partido.size() > 3) {
@@ -379,17 +359,18 @@ class Main {
 					partido.get(i).setGol_visitante((int)(Math.random()*7));	
 					}
 				} else if (op == 2) {
-					System.out.println("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
-					elec = entrada.nextLine();
+					elec = JOptionPane.showInputDialog("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
 					if (elec.equalsIgnoreCase("si")) {
 						Partido.realizarApuesta(partido);
 					} 
 					for (int i=0; i<partido.size();i++) {
-					System.out.println(partido.get(i));
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":");
-					partido.get(i).setGol_local(entrada.nextInt());
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":");
-					partido.get(i).setGol_visitante(entrada.nextInt());	
+					JOptionPane.showMessageDialog(null, partido.get(i));
+					partido.get(i).setGol_local(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":")));
+					partido.get(i).setGol_visitante(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":")));
+					if (partido.get(i).getGol_local() == partido.get(i).getGol_visitante()) {
+						penal_local = Integer.parseInt(JOptionPane.showInputDialog("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:"));
+						penal_vis = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:"));
+					}
 					}
 				}
 				for (int i=0; i<partido.size();i++) {
@@ -412,12 +393,12 @@ class Main {
 				if (partido.get(i).getGol_local() > partido.get(i).getGol_visitante()) {
 					partido.get(i).getPais2().setClasificado(false);
 					clasificado.add(partido.get(i).getPais());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				} else if (partido.get(i).getGol_visitante() > partido.get(i).getGol_local()) {
 					partido.get(i).getPais().setClasificado(false);
 					clasificado.add(partido.get(i).getPais2());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				}
 				else{
@@ -429,21 +410,18 @@ class Main {
 								j=6;
 							}
 							}
-						} else if (op == 2) {
-							System.out.println("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:");
-							penal_local = entrada.nextInt();
-							System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:");
-							penal_vis = entrada.nextInt();
-						}
-					System.out.println("El partido finalizo por penales.");
+						} 
+	
 					partido.get(i).setDuracion(Math.round(((Math.random()*10) + 120) * 100d) / 100d);
-					System.out.println("Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					if (penal_local > penal_vis) {
 						partido.get(i).getPais2().setClasificado(false);
 						clasificado.add(partido.get(i).getPais());
 					} else {
 						partido.get(i).getPais().setClasificado(false);
 						clasificado.add(partido.get(i).getPais2());
+						
+						
 					}
 				}
 		}
@@ -454,17 +432,14 @@ class Main {
 					partido.get(i).setGol_visitante((int)(Math.random()*7));
 					}
 				} else if (op == 2) {
-					System.out.println("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
-					elec = entrada.nextLine();
+					elec = JOptionPane.showInputDialog("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
 					if (elec.equalsIgnoreCase("si")) {
 						Partido.realizarApuesta(partido);
 					} 
 					for (int i=0; i<partido.size();i++) {
-					System.out.println(partido.get(i));
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":");
-					partido.get(i).setGol_local(entrada.nextInt());
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":");
-					partido.get(i).setGol_visitante(entrada.nextInt());		
+					JOptionPane.showMessageDialog(null, partido.get(i));
+					partido.get(i).setGol_local(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":")));
+					partido.get(i).setGol_visitante(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":")));		
 					}
 				}
 				
@@ -488,12 +463,12 @@ class Main {
 				if (partido.get(i).getGol_local() > partido.get(i).getGol_visitante()) {
 					clasificado.add(partido.get(i).getPais());
 					tercer.add(partido.get(i).getPais2());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				} else if (partido.get(i).getGol_visitante() > partido.get(i).getGol_local()) {
 					tercer.add(partido.get(i).getPais());
 					clasificado.add(partido.get(i).getPais2());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				}
 				else{
@@ -506,14 +481,13 @@ class Main {
 						}
 						}
 					} else if (op == 2) {
-						System.out.println("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:");
-						penal_local = entrada.nextInt();
-						System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:");
-						penal_vis = entrada.nextInt();
+						penal_local = Integer.parseInt(JOptionPane.showInputDialog("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:"));
+						penal_vis = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:"));
 					}
-					System.out.println("El partido finalizo por penales.");
+					
+					
 					partido.get(i).setDuracion(Math.round(((Math.random()*10) + 120) * 100d) / 100d);
-					System.out.println("Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					if (penal_local > penal_vis) {
 						clasificado.add(partido.get(i).getPais());
 						tercer.add(partido.get(i).getPais2());
@@ -534,9 +508,7 @@ class Main {
 		}
 	}
 	public static void partidosEliminatoriasFinales(LinkedList<Partido> partido, LinkedList<Pais> paises, int op) {
-		Partido partidocl;
 		String elec;
-		Scanner entrada = new Scanner(System.in);
 		int penal_local=0, penal_vis=0;
 				if (op == 1) {
 					for (int i=0; i<partido.size();i++) {
@@ -544,17 +516,14 @@ class Main {
 					partido.get(i).setGol_visitante((int)(Math.random()*7));
 					}
 				} else if (op == 2) {
-					System.out.println("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
-					elec = entrada.nextLine();
+					elec = JOptionPane.showInputDialog("Desea realizar una apuesta en los partidos de eliminatoria? Responder SI o NO, si escribe cualquier otra cosa debera esperar a la siguiente fase para apostar.");
 					if (elec.equalsIgnoreCase("si")) {
 						Partido.realizarApuesta(partido);
 					} 
 					for (int i=0; i<partido.size();i++) {
-					System.out.println(partido.get(i));
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":");
-					partido.get(i).setGol_local(entrada.nextInt());
-					System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":");
-					partido.get(i).setGol_visitante(entrada.nextInt());				
+					JOptionPane.showMessageDialog(null, partido.get(i));
+					partido.get(i).setGol_local(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais().getNombre() + ":")));
+					partido.get(i).setGol_visitante(Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + ":")));			
 					}
 				}
 				
@@ -578,12 +547,12 @@ class Main {
 				if (partido.get(i).getGol_local() > partido.get(i).getGol_visitante()) {
 					paises.add(partido.get(i).getPais());
 					paises.add(partido.get(i).getPais2());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				} else if (partido.get(i).getGol_visitante() > partido.get(i).getGol_local()) {
 					paises.add(partido.get(i).getPais());
 					paises.add(partido.get(i).getPais2());
-					System.out.println("Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado partido " + "\n" + partido.get(i).getGol_local() + " " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() + "  // Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					
 				}
 				else{
@@ -596,14 +565,11 @@ class Main {
 						}
 						}
 					} else if (op == 2) {
-						System.out.println("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:");
-						penal_local = entrada.nextInt();
-						System.out.println("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:");
-						penal_vis = entrada.nextInt();
+						penal_local = Integer.parseInt(JOptionPane.showInputDialog("El partido llego a los penales! \n Ingrese los goles de " + partido.get(i).getPais().getNombre() + " en los penales:"));
+						penal_vis = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de " + partido.get(i).getPais2().getNombre() + " en los penales:"));
 					}
-					System.out.println("El partido finalizo por penales.");
 					partido.get(i).setDuracion(Math.round(((Math.random()*10) + 120) * 100d) / 100d);
-					System.out.println("Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
+					JOptionPane.showMessageDialog(null, "Resultado del partido \n" + partido.get(i).getGol_local() + "(" + penal_local+ ") " + partido.get(i).getPais() + " - " + partido.get(i).getPais2() + " " + partido.get(i).getGol_visitante() +"(" + penal_vis + ")" + "  //El partido finalizo por penales. Duracion del partido: " + partido.get(i).getDuracion() + " min. \n");
 					if (penal_local > penal_vis) {
 						paises.add(partido.get(i).getPais());
 						paises.add(partido.get(i).getPais2());
@@ -682,35 +648,20 @@ class Main {
 			, LinkedList<Pais> paises, LinkedList<Pais> octavos, LinkedList<Partido> partidoOctavos, LinkedList<Pais> cuartos, LinkedList<Partido> partidoCuartos, LinkedList<Pais> semis,
 			LinkedList<Partido> partidoSemis, LinkedList<Pais> finaal, LinkedList<Partido> partidoFinal, LinkedList<Pais> tercerycuarto, LinkedList<Partido> partidoTercer,
 			LinkedList<Pais> top4, Encargado encargado) {
-		Scanner entrada = new Scanner (System.in);
-		System.out.println("\t Bienvenido al Mundial de Qatar 2022 \t\n ¿Que desea realizar? \n1- Quiero simular el mundial completo \n 2 - Quiero decidir los datos de los partidos por mi cuenta y realizar apuestas");
-		int op= entrada.nextInt();
+		int op;
 		String seguir;
+		op = Integer.parseInt(JOptionPane.showInputDialog("\t Bienvenido al Mundial de Qatar 2022 \t\n ¿Que desea realizar? \n1- Quiero simular el mundial completo \n 2 - Quiero decidir los datos de los partidos por mi cuenta y realizar apuestas"));
 		switch(op) {
 		case 1:
 			//Jugar todos los partidos de los grupos.
-			System.out.println("Comienza la simulacion de los partidos del grupo A");
+			JOptionPane.showMessageDialog(null, "Comienza la simulacion del Mundial Qatar 2022");
 			jugarPartido(Partidoa, Grupoa, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo B");
 			jugarPartido(Partidob, Grupob, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo C");
 			jugarPartido(Partidoc, Grupoc, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo D");
 			jugarPartido(Partidod, Grupod, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo E");
 			jugarPartido(Partidoe, Grupoe, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo F");
 			jugarPartido(Partidof, Grupof, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo G");
 			jugarPartido(Partidog, Grupog, op);
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Comienza la simulacion de los partidos del grupo H");
 			jugarPartido(Partidoh, Grupoh, op);
 			
 			//Ordenar paises y grupos de acuerdo a sus puntos y diferencias de goles.
@@ -727,14 +678,9 @@ class Main {
 			
 			
 			
-			System.out.println("///////////////////////////////////////////////////");
-			System.out.println("Asi quedan los grupos de forma ordenada. Los dos primeros pasaran a la siguiente etapa.");
+			JOptionPane.showMessageDialog(null, "Las dos primeras naciones de cada grupo pasaran a la siguiente etapa.");
 			verRankingGrupo(paises, op);
-			System.out.println(" ");
-			
-			System.out.println("Finalizo la etapa de fase de grupos, desea seguir con la simulacion? \n Si o No.");
-			entrada.nextLine();
-			seguir = entrada.nextLine();
+			seguir = JOptionPane.showInputDialog("Finalizo la etapa de fase de grupos, desea seguir con la simulacion? \n Si o No.");
 			if (seguir.equalsIgnoreCase("si")) {
 				avanzarFasePrimeros(octavos, Grupoa, partidoOctavos);
 				avanzarFasePrimeros(octavos, Grupob, partidoOctavos);
@@ -752,54 +698,45 @@ class Main {
 				avanzarFaseSegundos(octavos, Grupof, partidoOctavos);
 				avanzarFaseSegundos(octavos, Grupog, partidoOctavos);
 				avanzarFaseSegundos(octavos, Grupoh, partidoOctavos);	
-				System.out.println("Estos son los partidos de Octavos de final.");
-				System.out.println(partidoOctavos);
-				System.out.println("\nA contianuacion los resultados de los partidos: ");
+				JOptionPane.showMessageDialog(null, "Estos son los partidos de Octavos de final.");
+				JOptionPane.showMessageDialog(null, partidoOctavos);
+				JOptionPane.showMessageDialog(null, "Los resultados de los partidos son los siguientes: ");
 				partidosEliminatorias(partidoOctavos, cuartos, null, op);
-				System.out.println("Finalizo la etapa de octavos de final, desea seguir con la simulacion? \n Si o No.");
-				seguir = entrada.nextLine();
+				seguir = JOptionPane.showInputDialog("Finalizo la etapa de octavos de final, desea seguir con la simulacion? \n Si o No.");
 				if (seguir.equalsIgnoreCase("si")) {
 					armadoCuartos(partidoCuartos, cuartos);
-					System.out.println("Finalizaron los octavos de final, a continuacion tenemos los partidos de Cuartos de final.");
-					System.out.println(partidoCuartos);
-					System.out.println("\nLos resultados de los partidos son los siguientes: ");
+					JOptionPane.showMessageDialog(null, "Finalizaron los octavos de final, a continuacion tenemos los partidos de Cuartos de final.");
+					JOptionPane.showMessageDialog(null, partidoCuartos);
+					JOptionPane.showMessageDialog(null, "Los resultados de los partidos son los siguientes: ");
 					partidosEliminatorias(partidoCuartos,semis, null, op);
-					System.out.println("Finalizo la etapa de cuartos de final, desea seguir con la simulacion? \n Si o No.");
-					seguir = entrada.nextLine();
+					seguir = JOptionPane.showInputDialog("Finalizo la etapa de cuartos de final, desea seguir con la simulacion? \n Si o No.");
 					if (seguir.equalsIgnoreCase("si")) {
 						armadoSemis(partidoSemis, semis);
-						System.out.println("Finalizaron los Cuartos de final, a continuacion tenemos los partidos de Semifinal.");
-						System.out.println(partidoSemis);
-						System.out.println("\nLos resultados de los partidos son los siguientes: ");
+						JOptionPane.showMessageDialog(null, "Finalizaron los Cuartos de final, a continuacion tenemos los partidos de Semifinal.");
+						JOptionPane.showMessageDialog(null, partidoSemis);
+						JOptionPane.showMessageDialog(null, "Los resultados de los partidos son los siguientes: ");
 						partidosEliminatorias(partidoSemis, finaal, tercerycuarto, op);
-						System.out.println("Finalizo la etapa de semifinales, desea seguir con la simulacion? \n Si o No.");
-						seguir = entrada.nextLine();
+						seguir = JOptionPane.showInputDialog("Finalizo la etapa de semifinales, desea seguir con la simulacion? \n Si o No.");
 						if (seguir.equalsIgnoreCase("si")) {
 							armadoFinalyTercer(finaal, tercerycuarto, partidoFinal, partidoTercer);
-							System.out.println("Finalizaron las Semifinales, a continuacion tenemos los partidos de la Final y el tercer y cuarto puesto.");
-							System.out.println("Final: " + partidoFinal);
-							System.out.println("Tercer y cuarto puesto: " + partidoTercer);
-							System.out.println("\nLos resultados de los partidos son los siguientes: ");
+							JOptionPane.showMessageDialog(null, "Finalizaron las Semifinales, a continuacion tenemos los partidos de la Final y el tercer y cuarto puesto. \nFinal: " + partidoFinal + "\nTercer y cuarto puesto: " + partidoTercer);
+							JOptionPane.showMessageDialog(null, "Los resultados de los partidos son los siguientes: ");
 							partidosEliminatoriasFinales(partidoFinal, top4, op);
 							partidosEliminatoriasFinales(partidoTercer, top4, op);
 							int puesto=1;
-							System.out.println("El top 4 de la final queda formado de la siguiente manera");
-							for (int i=0; i < top4.size();i++) {
+							JOptionPane.showMessageDialog(null, "El top 4 de la final queda formado de la siguiente manera: \n" + top4.get(0) + "\n" + top4.get(1) + "\n" + top4.get(2)  + "\n" + top4.get(3));
+							/*for (int i=0; i < top4.size();i++) {
 								System.out.println(puesto + " - " + top4.get(i));
 								puesto++;
-							}
-							System.out.println("\nEl campeon es: " + top4.get(0));
-							System.out.println("Finalizo la simulacion del mundial\nSi desea saber las estadisticas especificas de un equipo durante todo el mundial.");
+							}*/
 							do {
-								System.out.println("Ingrese a continuacion el nombre del equipo, de lo contrario el programa finalizara.");
-								seguir = entrada.nextLine();
+								seguir = JOptionPane.showInputDialog("El campeon es: " + top4.get(0) + "\n\tFinalizo el mundial Qatar 2022 \nSi desea saber las estadisticas especificas de un equipo durante todo el mundial, ingrese el nombre del equipo, de lo contrario el programa finalizara.");
 								for (Pais pais : paises) {
 									if (pais.getNombre().equalsIgnoreCase(seguir)) {
-										System.out.println("Nombre\tPuntos\tPJ\tPG\tPP\tPE\tGF\tGC\tDG\tGoles Totales\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPj() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles() + "\t" + pais.getCant_gol());
+										JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles() + "\nGoles Totales: " + pais.getCant_gol());
 									}
 								}
-							System.out.println("Desea preguntar las estadisticas especificas de otro equipo?");
-							seguir = entrada.nextLine();
+							seguir = JOptionPane.showInputDialog("Desea preguntar las estadisticas especificas de otro equipo?");
 							} while(seguir.equalsIgnoreCase("si"));
 							
 						}
@@ -815,31 +752,15 @@ class Main {
 		case 2:
 			//Acceso
 			if (encargado.acceder()) {
-				entrada.nextLine();
 			do {				
 				//Jugar todos los partidos de los grupos.
-				System.out.println("\t GRUPO A");
 				jugarPartido(Partidoa, Grupoa, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO B");
 				jugarPartido(Partidob, Grupob, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO C");
 				jugarPartido(Partidoc, Grupoc, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO D");
 				jugarPartido(Partidod, Grupod, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO E");
 				jugarPartido(Partidoe, Grupoe, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO F");
 				jugarPartido(Partidof, Grupof, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO G");
 				jugarPartido(Partidog, Grupog, op);
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("\t GRUPO H");
 				jugarPartido(Partidoh, Grupoh, op);
 				
 				//Ordenar paises y grupos de acuerdo a sus puntos y diferencias de goles.
@@ -855,13 +776,10 @@ class Main {
 				Collections.sort(Grupoh, compar.reversed());
 				
 				
-				
-				System.out.println("///////////////////////////////////////////////////");
-				System.out.println("Finalizo la etapa de fase de grupos. Los dos primeros pasaran a la siguiente etapa.");
+				JOptionPane.showMessageDialog(null, "Finalizo la etapa de fase de grupos. Los dos primeros pasaran a la siguiente etapa.");
 				verRankingGrupo(paises, op);
-				System.out.println(" ");
 				
-				System.out.println("A continuacion seguimos con los octavos de final.");
+				JOptionPane.showMessageDialog(null, "A continuacion seguimos con los octavos de final.");
 				avanzarFasePrimeros(octavos, Grupoa, partidoOctavos);
 				avanzarFasePrimeros(octavos, Grupob, partidoOctavos);
 				avanzarFasePrimeros(octavos, Grupoc, partidoOctavos);
@@ -878,55 +796,44 @@ class Main {
 				avanzarFaseSegundos(octavos, Grupof, partidoOctavos);
 				avanzarFaseSegundos(octavos, Grupog, partidoOctavos);
 				avanzarFaseSegundos(octavos, Grupoh, partidoOctavos);	
-				System.out.println("Estos son los partidos de Octavos de final.");
-				System.out.println(partidoOctavos);
+				JOptionPane.showMessageDialog(null, "Estos son los partidos de Octavos de final.");
+				JOptionPane.showMessageDialog(null, partidoOctavos);
 				partidosEliminatorias(partidoOctavos, cuartos, null, op);
 				
 				armadoCuartos(partidoCuartos, cuartos);
-				System.out.println("Finalizaron los octavos de final, a continuacion tenemos los partidos de Cuartos de final.");
-				System.out.println(partidoCuartos);
+				JOptionPane.showMessageDialog(null, "Finalizaron los octavos de final, a continuacion tenemos los partidos de Cuartos de final.");
+				JOptionPane.showMessageDialog(null, partidoCuartos);
 				partidosEliminatorias(partidoCuartos,semis, null, op);
 				
-				
+
 				armadoSemis(partidoSemis, semis);
-				System.out.println("Finalizaron los Cuartos de final, a continuacion tenemos los partidos de Semifinal.");
-				System.out.println(partidoSemis);
+				JOptionPane.showMessageDialog(null, "Finalizaron los Cuartos de final, a continuacion tenemos los partidos de Semifinal.");
+				JOptionPane.showMessageDialog(null, partidoSemis);
 				partidosEliminatorias(partidoSemis, finaal, tercerycuarto, op);
-				
 				armadoFinalyTercer(finaal, tercerycuarto, partidoFinal, partidoTercer);
-				System.out.println("Finalizaron las Semifinales, a continuacion tenemos los partidos de la Final y el tercer y cuarto puesto.");
-				System.out.println("Final: " + partidoFinal);
-				System.out.println("Tercer y cuarto puesto: " + partidoTercer);
+				JOptionPane.showMessageDialog(null, "Finalizaron las Semifinales, a continuacion tenemos los partidos de la Final y el tercer y cuarto puesto. \nFinal: " + partidoFinal + "\nTercer y cuarto puesto: " + partidoTercer);
 				partidosEliminatoriasFinales(partidoFinal, top4, op);
 				partidosEliminatoriasFinales(partidoTercer, top4, op);
 				int puesto=1;
-				System.out.println("El top 4 de la final queda formado de la siguiente manera");
-				for (int i=0; i < top4.size();i++) {
-					System.out.println(puesto + " - " + top4.get(i));
-					puesto++;
-				}
-				System.out.println("\nEl campeon es: " + top4.get(0));
-				System.out.println("Finalizo el mundial Qatar 2022 \nSi desea saber las estadisticas especificas de un equipo durante todo el mundial.");
+				JOptionPane.showMessageDialog(null, "El top 4 de la final queda formado de la siguiente manera: \n" + top4.get(0) + "\n" + top4.get(1) + "\n" + top4.get(2)  + "\n" + top4.get(3));
 				do {
-					System.out.println("Ingrese a continuacion el nombre del equipo, de lo contrario el programa finalizara.");
-					seguir = entrada.nextLine();
+					seguir = JOptionPane.showInputDialog("El campeon es: " + top4.get(0) + "\n\tFinalizo el mundial Qatar 2022 \nSi desea saber las estadisticas especificas de un equipo durante todo el mundial, ingrese el nombre del equipo, de lo contrario el programa finalizara.");
 					for (Pais pais : paises) {
 						if (pais.getNombre().equalsIgnoreCase(seguir)) {
-							System.out.println("Nombre\tPuntos\tPJ\tPG\tPP\tPE\tGF\tGC\tDG\tGoles Totales\n" + pais.getAbr() + "\t" + pais.getPuntos() + "\t" + pais.getPj() + "\t" + pais.getPg() + "\t" + pais.getPp() + "\t" + pais.getPe() + "\t" + pais.getGoles_favor() + "\t" + pais.getGoles_contra() + "\t" + pais.getDiferencia_goles() + "\t" + pais.getCant_gol());
+							JOptionPane.showMessageDialog(null, "Nombre: " + pais.getAbr() + "\nPuntos: " + pais.getPuntos() + "\nPJ: " + pais.getPj() + "\nPG: " + pais.getPg() + "\nPP: " + pais.getPp() + "\nPE: " + pais.getPe() + "\nGF: " + pais.getGoles_favor() + "\nGC: " + pais.getGoles_contra() + "\nDG: " + pais.getDiferencia_goles() + "\nGoles Totales: " + pais.getCant_gol());
 						}
 					}
-					System.out.println("Desea preguntar las estadisticas especificas de otro equipo?");
-					seguir = entrada.nextLine();
+					
+				seguir = JOptionPane.showInputDialog("Desea preguntar las estadisticas especificas de otro equipo?");
 				} while(seguir.equalsIgnoreCase("si"));
 				
-				
-			System.out.println("Desea realizar otra carga de datos de un nuevo mundial?");
-			seguir = entrada.nextLine();
+			
+			seguir = JOptionPane.showInputDialog("Desea realizar otra carga de datos de un nuevo mundial?");
 			} while(seguir.equalsIgnoreCase("si"));
 			} 				
 			break;
 			default:
-				System.out.println("Opcion incorrecta, por favor elija una opcion correcta la proxima vez.");
+				JOptionPane.showMessageDialog(null, "Opcion incorrecta, por favor elija una opcion correcta la proxima vez.");
 				break;
 		}
 	}		

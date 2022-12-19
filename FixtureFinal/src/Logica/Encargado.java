@@ -2,6 +2,8 @@ package Logica;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Encargado {
 	private static String nombre;
 	private static String apellido;
@@ -44,27 +46,23 @@ public class Encargado {
 				+ codigo_acceso + "]";
 	}
 	public static boolean acceder() {
-		Scanner entrada = new Scanner (System.in);
 		String dato,nom,ape;
 		int codigo;
-		System.out.println("Ingrese su nombre para verificar sus datos por favor: ");
-		nom=entrada.nextLine();
-		System.out.println("Ingrese su apellido para seguir verificando sus datos por favor: ");
-		ape=entrada.nextLine();
-		System.out.println("Ingrese su codigo de acceso para seguir verificando sus datos por favor: ");
-		codigo=entrada.nextInt();
+		nom= JOptionPane.showInputDialog("Ingrese su nombre para verificar sus datos por favor: ");
+		ape= JOptionPane.showInputDialog("Ingrese su apellido para seguir verificando sus datos por favor: ");
+		codigo= Integer.parseInt(JOptionPane.showInputDialog("Ingrese su codigo de acceso para seguir verificando sus datos por favor: "));
 		if (nom.equalsIgnoreCase(nombre) && ape.equalsIgnoreCase(apellido) && codigo == codigo_acceso) {
-			System.out.println("Entro satisfactoriamente a su cuenta, ahora podra cargar datos!");
+			JOptionPane.showMessageDialog(null, "Entro satisfactoriamente a su cuenta, ahora podra cargar datos!");
 			return true;
 		} else {
 			if (!nom.equalsIgnoreCase(nombre)) {
-				System.out.println("El nombre de la cuenta es incorrecto");
+				JOptionPane.showMessageDialog(null, "El nombre de la cuenta es incorrecto");
 			}
 			if (!ape.equalsIgnoreCase(apellido)) {
-				System.out.println("El apellido de la cuenta es incorrecto");
+				JOptionPane.showMessageDialog(null, "El apellido de la cuenta es incorrecto");
 			}
 			if (codigo != codigo_acceso) {
-				System.out.println("El codigo de acceso a la cuenta fue incorrecto");
+				JOptionPane.showMessageDialog(null, "El codigo de acceso a la cuenta fue incorrecto");
 			}
 			return false;
 		}
